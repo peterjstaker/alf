@@ -1,0 +1,27 @@
+.clockRow {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.timeColumn {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timeNum {
+    color: #EEE;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.timeLabel {
+    color: #AACCFF;
+    font-size: 12px;
+}

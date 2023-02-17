@@ -1,0 +1,364 @@
+.yeet {
+    overflow: hidden;
+    background-color: #000;
+    min-height: 100vh;
+}
+
+.container {
+    color: #fff;
+    min-height: 1200px;
+    height: 100vh;
+    padding-top: 140px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+        background-color: #121212;
+    background-image: url(/media/bg-dots2.png);
+}
+
+.teamTitle {
+    width: 100%;
+    max-width: 760px;
+    margin-inline: auto;
+    margin-bottom: 1rem;;
+}
+
+.teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+}
+
+@media screen and (min-width: 1440px){
+.teamTitle {
+    max-width: 1240px;
+}}
+.teamTitle h1{
+    font-weight: 700;
+    text-shadow: rgb(52 80 170) 2px 0px 0px, rgb(246 0 187 / 70%) -2px 0px 0px, rgb(192 115 185) 0px 0px 4px, rgb(255 255 255) 0px 0px 3px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    /* text-shadow: -1px -1px 0 #3c070d, 1px -1px 0 #3c070d, -1px 1px 0 #3c070d, 2px 2px 0 #3c070d; */
+}
+.team {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 40px;
+    margin-inline: auto;
+    width: 100%;
+    min-height: 578px;
+    /* padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem; */
+}
+@media screen and (min-width: 1440px){
+.team {
+    max-width: 1200px;
+}}
+@media screen and (min-width: 1024px){
+.team {
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}}
+.teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+}
+@media screen and (min-width: 1440px){
+.teamMembers {
+    width: 760px;
+}}
+.member {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1;
+    width: 140px;
+    margin: 10px;
+}
+@media screen and (min-width: 1440px){
+.member {
+    width: 140px;
+}}
+.memberImg {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    background: none;
+    overflow: hidden;
+    transition: all 0.12s ease-in-out 0s;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+@media screen and (min-width: 1440px){
+.memberImg {
+    width: 140px;
+    height: 140px;
+}}
+.member h2 {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.33;
+    padding-top: 0.5rem;
+    font-weight: 700;
+    text-shadow: rgb(52 80 170) 2px 0px 0px, rgb(246 0 187 / 70%) -2px 0px 0px, rgb(192 115 185) 0px 0px 4px, rgb(255 255 255) 0px 0px 3px;
+}
+@media screen and (min-width: 520px){
+.member h2 {
+    line-height: 1.2;
+}}
+.member p {
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: .8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -1.25rem;
+    opacity: 0.8;
+}
+@media screen and (min-width: 768px){
+.member p {
+    line-height: 1.6rem;
+}}
+@media screen and (min-width: 1024px){
+.member p {
+    line-height: 1.7rem;
+}}
+@media screen and (min-width: 1440px){
+.member p {
+    font-size: 12px;
+}}
+
+.teamArt {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-inline-start: 2rem;
+    margin-inline-end: 2rem;
+    max-width: 400px;
+    min-height: 578px;
+}
+.artImg {
+    width: 100%;
+    min-width: 360px;
+    margin-bottom: 1.5rem;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 1;
+    /* box-shadow: rgb(2 46 131 / 60%) -5px 0px 30px, rgb(246 0 187 / 30%) 5px 0px 30px, rgb(70 42 98 / 50%) 0px 10px 50px; */
+    box-shadow: rgb(240 168 36 / 50% ) -5px 0px 30px, rgb(255 213 128 / 30%) 5px 0px 30px, rgb(246 181 71 / 20%) 0px 10px 50px;
+}
+
+@media screen and (min-width: 1024px){
+.artImg {
+    min-width: 360px;
+    margin-bottom: 0px;
+}}
+@media screen and (min-width: 1440px){
+.artImg {
+    min-width: 410px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}}
+.artImg img {
+    width: 100%;
+    object-fit: cover;
+}
+.teamInfo {
+    display: flex;
+    height: 65vh;
+    min-width: 360px;
+    overflow-y: initial;
+    padding-bottom: 2rem;
+    max-height: none;
+    background-color: var(--bg-color);
+}
+@media screen and (min-width: 1024px){
+.teamInfo {
+    max-width: 440px;
+    overflow-y: scroll;
+    padding-bottom: 12rem;
+}}
+@media screen and (min-width: 768px){
+.teamInfo {
+    max-width: 680px;
+    padding-bottom: 9rem;
+}}
+@media screen and (min-width: 375px){
+.teamInfo {
+    padding-bottom: 5rem;
+}}
+.infoContainer {
+    padding: 10px 20px;
+}
+.infoTitle {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+.infoTitle h2 {
+    font-family: Star;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.75rem;
+    line-height: 1.33;
+}
+@media screen and (min-width: 520px){
+.infoTitle h2 {
+    line-height: 1.2;
+}}
+.infoSocials {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    flex: 1 1 0%;
+}
+.infoSocials > :not(style) ~ :not(style) {
+    margin-top: 0px;
+    margin-inline: 0.5rem 0px;
+    margin-bottom: 0px;
+}
+.infoSocials a {
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+.infoSocials a svg{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+}
+.teamInfo h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    line-height: 1.33;
+    background: linear-gradient(-45deg,#ffd580,#f0a925,#ffe56f,#f6b547);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.teamInfo p {
+    opacity: 0.8;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+    line-height: 1.7rem;
+    font-size: 1rem;
+}
+
+
+.cardContainer {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background-color: var(--bg-color-light);
+    transition: all 0.5s ease-in-out;
+    background-color: #000000;
+    border: 2px solid;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-radius: 6px;
+    font-weight: 600;
+    z-index: 0;
+    position: relative;
+}
+  
+.cardContainer:focus {
+    border-radius: 5px;
+    border: 2px solid;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 12px #9ecaed;
+    color: #d0e1ef;
+    text-shadow: 0 0 7px #9ecaed, 0 0 10px #9ecaed;
+}
+  
+.cardContainer:before {
+    border-radius: 5px;
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.cardContainer:active {
+    color: #000;
+}
+
+  
+.cardContainer:hover:before {
+    opacity: 1;
+}
+  
+.cardContainer:after {
+    border-radius: 5px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+}
+
+
+@media (min-width: 1024px){
+    .container {
+        min-height: 900px;
+    }
+}
+
+.img {
+    object-fit: cover;
+}

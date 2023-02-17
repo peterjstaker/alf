@@ -1,0 +1,69 @@
+.link {
+    text-decoration: none;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .cardDeck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phoneContainer {
+    width: 100%;
+    max-width: 576px;
+    min-width: 360px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .wrapper {
+    width: 70%;
+    min-width: 360px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 416px){
+    .phoneContainer {
+      min-width: 340px;
+    }
+  
+    .wrapper {
+      min-width: 340px;
+    }
+  }
+
+  @media screen and (max-width: 346px){
+    .phoneContainer {
+      min-width: 320px;
+    }
+  
+    .wrapper {
+      min-width: 320px;
+    }
+  }
+
+  @media screen and (max-width: 320px){
+    .phoneContainer {
+      min-width: 300px;
+    }
+  
+    .wrapper {
+      min-width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 300px){
+    .phoneContainer {
+      min-width: 280px;
+    }
+  
+    .wrapper {
+      min-width: 280px;
+    }
+  }

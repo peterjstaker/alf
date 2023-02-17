@@ -1,0 +1,94 @@
+.buttonText {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background-color: var(--bg-color-light);
+    transition: all 0.5s ease-in-out;
+    background-color: #000000;
+    border: 2px solid;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-radius: 6px;
+    font-weight: 600;
+    z-index: 0;
+    position: relative;
+    margin-top: 20px;
+    color: #fff;
+    width: 100%;
+}
+  
+.dropdown:focus {
+    border-radius: 5px;
+    border: 2px solid;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 12px #9ecaed;
+    color: #d0e1ef;
+    text-shadow: 0 0 7px #9ecaed, 0 0 10px #9ecaed;
+}
+  
+.dropdown:before {
+    border-radius: 5px;
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.dropdown:active {
+    color: #000;
+}
+
+  
+.dropdown:hover:before {
+    opacity: 1;
+}
+  
+.dropdown:after {
+    border-radius: 5px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+}
+
+.faqDropdownContent {
+    word-break: keep-all
+}

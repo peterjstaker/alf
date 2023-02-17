@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/mint": "pages/mint.js",
+  "/map": "pages/map.js",
+  "/team": "pages/team.js",
+  "/faq": "pages/faq.js",
+  "/lore": "pages/lore.js",
+  "/gallery": "pages/gallery.js"
+}

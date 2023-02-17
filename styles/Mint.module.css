@@ -1,0 +1,320 @@
+.wrapper {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    letter-spacing: 1px;
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+@media only screen and (max-width: 991px){
+.wrapper {
+    padding: 80px 0px;
+}}
+.wrapper h1 {
+    /* font-family: Star; */
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: -1px -1px 0 #3c070d, 1px -1px 0 #3c070d, -1px 1px 0 #3c070d, 2px 2px 0 #3c070d;
+}
+
+.menu {
+    position: relative;
+    background-size: 100%;
+    /* border: 2px solid #2e140f; */
+    /* padding: 40px */
+}
+
+.mintBox h2{
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  /* font-family: Star; */
+  text-align: center;
+  color: var(--accent-color-2);
+  text-shadow: -1px -1px 0 #3c070d, 1px -1px 0 #3c070d, -1px 1px 0 #3c070d, 2px 2px 0 #3c070d;
+  filter: drop-shadow(5px 5px 0px #000); 
+}
+
+.mintBox {
+  position: relative;
+  width: 440px;
+  margin: auto;
+  /* border: 2px solid #3c070d; */
+  border-radius: 0.375rem;
+  text-align: center;
+  padding: 20px;
+  background: var(--bg-color-2);
+  box-shadow: 6px 6px 0 rgb(0 0 0 / 20%);
+  background-color: var(--bg-color-dark);
+}
+@media only screen and (max-width: 991px){
+.mintBox {
+    width: 100%;
+}}
+.mintBox2 {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.mintImg img{
+  max-width: 50%;
+    height: auto;
+}
+
+.mintList {
+  margin: 30px 0px;
+}
+.mintList {
+  padding: 0px;
+  margin: 0px;
+}
+.mintList li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: 56px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.262);
+}
+.mintList  li h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  margin: 0px;
+}
+.mintQuantity {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 106px;
+  width: 100%;
+  height: 100%;
+}
+.mintQuantity button {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mintQuantity input {
+  max-width: 58px;
+  width: 100%;
+  border-top: none;
+  border-bottom: none;
+  border-image: initial;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: transparent;
+  padding: 0px 19px;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.mintBtn {
+  width: 100%;
+  background-color: var(--accent-color);
+  border: 0;
+  border-radius: 0.375rem;
+  /* font-family: Star; */
+  color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+.loader {
+  font-size: 10px;
+  margin: auto;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: var(--accent-color);
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.upperSide {
+padding: 2em;
+background-color: var(--accent-color);
+display: block;
+color: #fff;
+border-top-right-radius: 0.375rem;
+border-top-left-radius: 0.375rem;
+}
+
+.checkmark {
+font-weight: lighter;
+fill: #fff;
+/* margin: -3.5em auto auto 20px; */
+width: 3rem;
+margin-bottom: 10px;
+}
+
+
+.status {
+font-weight: lighter;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 2rem;
+margin-top: -.2em;
+margin-bottom: 0;
+/* font-family: Star; */
+}
+
+.lowerSide {
+padding: 2em 2em 5em 2em;
+color: #fff;
+display: block;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.wallet {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+.headerSocials {
+  position: absolute;
+  z-index: 5;
+  bottom: 25px;
+  left: 30px;
+}
+.socialsWrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px){
+.socialsWrapper {
+    display: none;
+}}
+.socialLink {
+  position: relative;
+  margin-bottom: 8px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #f3f3f3;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.socialLink:hover {
+  background-color: var(--accent-color);
+}
+.socialLink svg {
+  stroke: currentColor;
+  fill: #f3f3f3;
+  width: 22px;
+  height: 22px;
+  /* fill: #fff; */
+  stroke: transparent
+}
+.socialLink img {
+  /* background-color: var(--bg-color); */
+  border: 2px solid #f3f3f3;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+}
+.logoImg {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.logoImg img{
+  width: 100%;
+  height: 100%;
+}

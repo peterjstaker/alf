@@ -1,0 +1,195 @@
+.wrapper {
+    // width: 100%;
+    // min-height: 100vh;
+    // padding-top: 70px;
+    // color: #fff;
+    // padding-bottom: 100px;
+    // background-color: #121212;
+    // background-image: url(/media/bg-dots2.png);
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/media/ALfbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-color: #121212;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mintContainer {
+    padding: 36px;
+    --angle: 0deg;
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    animation: 3s rotate linear infinite;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.mintBoxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.mintBtn:hover{
+    cursor: pointer;
+}
+
+.wallet {
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.mintBtn {
+    padding: 12px 18px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-radius: 0px;
+    font-weight: 600;
+    z-index: 0;
+    position: relative;
+}
+
+.mintBtn:focus {
+    border: 2px solid;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 12px #9ecaed;
+    color: #d0e1ef;
+    text-shadow: 0 0 7px #9ecaed, 0 0 10px #9ecaed;
+}
+
+.mintBtn:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.loading {
+        // content: "";
+        // background: linear-gradient(45deg,
+        //             #ff0000,
+        //             #ff7300,
+        //             #fffb00,
+        //             #48ff00,
+        //             #00ffd5,
+        //             #002bff,
+        //             #7a00ff,
+        //             #ff00c8,
+        //             #ff0000);
+        //     position: absolute;
+        //     top: -2px;
+        //     left: -2px;
+        //     z-index: -1;
+        //         background-size: 400%;
+        //     filter: blur(5px);
+        //     width: calc(100% + 4px);
+        //     height: calc(100% + 4px);
+        //     animation: glowing 20s linear infinite;
+        //     opacity: 0;
+        //     transition: opacity 0.3s ease-in-out;
+            background: transparent;
+            opacity: 1;
+}
+
+.mintBtn:active {
+    color: #000;
+}
+
+.mintBtn:active:after {
+    background: transparent;
+}
+
+.mintBtn:hover:before {
+    opacity: 1;
+}
+
+.mintBtn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+}
+
+/* .connect-wallet {
+    padding: 8px;
+    width: 180px;
+} */
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.skew {
+    color:#8ae2ff;
+    position: absolute;
+    top: 40%;
+    left: 16%;
+}
